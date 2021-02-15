@@ -1,4 +1,12 @@
 .logo
-    .header &
+    .header &, .footer &
         img, svg
-            height: 48px
+            height: 55px
+
+        img
+            object-fit: contain
+
+    @media media-max-lg
+        .footer &
+            img
+                margin: 0 auto

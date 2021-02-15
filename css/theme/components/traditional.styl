@@ -1,0 +1,67 @@
+.traditional
+    display: flex
+    align-items: center
+    background: linear-gradient(to right, var(--color-gray), var(--color-white), var(--color-gray))
+    box-shadow: 280px 0 0 var(--color-gray), -280px 0 0 var(--color-gray)
+
+    @media media-min-lg
+        position: relative
+        padding: (gap * 2) 0
+        min-height: 600px
+        box-shadow: 800px 0 0 var(--color-gray), -800px 0 0 var(--color-gray)
+
+    @media media-max-lg
+        padding-top: gap
+
+    &__title
+        title()
+
+        @media media-min-lg
+            max-width: 100%
+            width: 365px
+
+        &:after
+            display: block
+            margin: (gap / 2) 0
+            width: 80px
+            height: 5px
+            background: var(--primary-hover)
+            content: ''
+
+    &__main
+        @media media-min-lg
+            width: 50%
+
+        @media media-max-lg
+            display: flex
+            align-items: center
+
+    &__content
+        subtitle()
+
+        @media media-max-lg
+            flex: 1
+            min-width: 0
+
+    &__img
+        @media media-min-lg
+            position: absolute
+            top: 50%
+            right: 0
+            width: 40%
+            transform: translateY(-50%)
+
+        @media media-max-lg
+            flex: 1
+            min-width: 0
+
+            img
+                display: block
+                max-width: 100%
+                width: 500px
+
+    &__footer
+        padding: gap 0
+
+        a
+            link()

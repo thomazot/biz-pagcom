@@ -1433,14 +1433,64 @@ $j(document)
 
         // Scrolling
         scrollTop()
-        // Categories title
-        categoriesTitle()
 
-        // Menu Categories
-        $('.categories .parent').click(function (event) {
-            if ($(event.target).hasClass('parent')) {
-                $(event.target).toggleClass('on')
+        $('.header .mymenu__button').click(function () {
+            const expanded =
+                $(this).attr('aria-expanded') === 'true' ? 'false' : 'true'
+            const controls = $(this).attr('aria-controls')
+            $(this).attr('aria-expanded', expanded)
+            $(controls).attr('aria-expanded', expanded)
+        })
+
+        $('.header .mymenu').click(function (event) {
+            const element = $(event.target)
+            if (element.hasClass('mymenu')) {
+                const expanded =
+                    element.attr('aria-expanded') === 'true' ? 'false' : 'true'
+                $('[aria-controls*=menu-topo]').attr('aria-expanded', expanded)
+                $(this).attr('aria-expanded', expanded)
             }
+        })
+
+        $('.taxa__slide').click(function () {
+            const slides = $(this).closest('.taxa__slides')
+            const taxaCase = $(this).closest('.taxa__case')
+            const days = parseInt($(this).attr('data-dias'))
+
+            slides.find('.taxa__slide').removeClass('taxa__slide--actived')
+            $(this).addClass('taxa__slide--actived')
+
+            taxaCase.find('.taxa__perc').each(function () {
+                const perc = $(this).attr('data-perc')
+                if (days === 1) {
+                    if (perc === '4.98') {
+                        $(this).find('span').html('4,98%*')
+                    } else {
+                        $(this).find('span').html('1,99%*')
+                    }
+                } else {
+                    if (perc === '4.98') {
+                        $(this).find('span').html('2,99%*')
+                    } else {
+                        $(this).find('span').html('3,89%*')
+                    }
+                }
+            })
+        })
+
+        addSVG({
+            'z-security': {
+                selector: '.mymenu .icon-security > a',
+                mode: 'prepend',
+            },
+            'z-facebook': {
+                selector: '.footer .socials__item.facebook .socials__link',
+                mode: 'html',
+            },
+            'z-instagram': {
+                selector: '.footer .socials__item.insta .socials__link',
+                mode: 'html',
+            },
         })
     })
     .on('resizeStop', function (e) {

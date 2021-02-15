@@ -1,12 +1,12 @@
 {
-    "protocol": "http",
-    "host": "nexybrand.loja.biz",
+    "protocol": "https",
+    "host": "pagcom.loja.biz",
     "browsers": [">1%"],
     "pxtorem": {
         "rootValue": 16,
         "unitPrecision": 2
     },
-    "theme": "neon",
+    "theme": "pagcom",
     "backstop": {
         "local": false,
         "id": "backstop_default",

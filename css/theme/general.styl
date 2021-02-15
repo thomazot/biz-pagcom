@@ -16,7 +16,7 @@ icon(i)
 /**
  * Mixin - Font-weight
  */
-font = 'Mukta', sans-serif
+font = 'Lato', sans-serif
 light = 300
 regular = 400
 medium = 500
@@ -25,7 +25,7 @@ bold = 700
 /**
  * Mixin - Viewport
  */
-viewport = 980px
+viewport = 1248px
 gap = 32px
 /**
  * Mixin - Responsive
@@ -61,4 +61,54 @@ shadowBorder()
         box-shadow: 800px 0 0 @background, -800px 0 0 @background
 
     @media media-max-lg
-        box-shadow: 300px 0 0 @background, -300px 0 0 @background
+        box-shadow: 280px 0 0 @background, -280px 0 0 @background
+
+title()
+    color: var(--primary)
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 22px
+
+    @media media-min-lg
+        font-size: 48px
+
+subtitle()
+    color: var(--color-link)
+    font-weight: regular
+    font-size: 12px
+
+    @media media-min-lg
+        font-size: 24px
+
+name()
+    color: var(--primary)
+    font-weight: bold
+    font-size: 12px
+
+    @media media-min-lg
+        font-size: 24px
+
+text()
+    color: var(--color-link)
+    font-weight: regular
+    font-size: 12px
+
+    @media media-min-lg
+        font-size: 14px
+
+link()
+    display: inline-block
+    padding: 8px 16px
+    border: solid 1px var(--primary)
+    background: var(--color-white)
+    color: var(--primary)
+    text-transform: uppercase
+    font-weight: regular
+    font-size: 12px
+
+    @media media-min-lg
+        font-size: 16px
+
+        &:hover
+            background: var(--primary)
+            color: var(--primary-contrast)
