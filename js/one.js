@@ -1457,6 +1457,14 @@ $j(document)
                 selector: '.mymenu .icon-security > a',
                 mode: 'prepend',
             },
+            'z-facebook': {
+                selector: '.footer .socials__item.facebook .socials__link',
+                mode: 'html',
+            },
+            'z-instagram': {
+                selector: '.footer .socials__item.insta .socials__link',
+                mode: 'html',
+            },
         })
     })
     .on('resizeStop', function (e) {

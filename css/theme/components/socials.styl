@@ -1,0 +1,40 @@
+.socials
+    --socials-bg: #808080
+
+    .footer &
+        &__title
+            color: var(--color-link)
+            text-transform: lowercase
+            font-weight: regular
+            font-size: 16px
+
+        &__list
+            margin: 0 !important
+            gap: 6px
+
+        &__link
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            background: var(--socials-bg)
+
+        &__item
+            padding: 0 !important
+
+            @media media-min-lg
+                &.facebook .socials__link:hover
+                    background: var(--facebook)
+
+                &.insta .socials__link:hover
+                    background: var(--instagram)
+
+        &__svg
+            display: none
+
+        .ico
+            width: 22px
+            height: 22px
+            fill: transparent

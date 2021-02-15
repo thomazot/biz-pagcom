@@ -1,0 +1,57 @@
+.footer
+    padding: gap 0
+
+    [href^=tel], &__whatsapp, &__skype
+        color: var(--primary)
+        font-weight: regular
+        font-size: 19px
+
+    [href^=mailto], [href*=whatsapp], [href^=skype]
+        color: var(--color-link)
+        font-weight: regular
+        font-size: 19px
+
+    &-container
+        background: linear-gradient(to right, var(--color-gray), var(--color-white), var(--color-gray))
+
+        &:after
+            display: block
+            height: 10px
+            background: var(--primary)
+            content: ''
+
+    &__row
+        @media media-min-lg
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+    &__contact
+        @media media-min-lg
+            display: flex
+            flex: 1
+            justify-content: space-around
+            align-items: center
+            min-width: 0
+
+        .footer__box
+            min-width: 0
+
+            @media media-min-lg
+                padding-left: gap
+
+            @media media-max-lg
+                padding-top: (gap / 2)
+                text-align: center
+
+            &:last-child
+                @media media-min-lg
+                    border-left: solid 1px var(--color-link)
+
+    &__socials
+        @media media-max-lg
+            padding-top: (gap / 2)
+            text-align: center
+
+            .ul--0
+                justify-content: center

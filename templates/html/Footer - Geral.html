@@ -1,0 +1,29 @@
+
+<div class="footer__row">
+    <div class="footer__logo">
+        {{widget type="interface/widget_logo" template="interface/widgets/logo.phtml" identificador="logofooter" imagem="wysiwyg/pagcom_logo.png" imagem_mobile="wysiwyg/pagcom_logo.png" alt_imagem="pagcom - Soluções para um bom negócio." tag_html="h3" tag_html_home="h3"}}
+    </div>
+    <div class="footer__contact">
+        <div class="footer__box">
+            <div class="footer__phone">
+                <a href="tel:{{config path="general/store_information/phone"}}">{{config path="general/store_information/phone"}}</a>
+            </div>
+            <div class="footer__email">
+                <a href="mailto:{{config path="trans_email/ident_general/email"}}">{{config path="trans_email/ident_general/email"}}</a>
+            </div>
+        </div>
+        <div class="footer__box">
+            <div class="footer__whatsapp">
+                <span>Whatsapp: </span>
+                <a href="https://api.whatsapp.com/send?phone=5511997599976">11 99759-9976</a>
+            </div>
+            <div class="footer__skype">
+                <span>Skype: </span>
+                <a href="skype:pagcom.atende">pagcom.atende</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__socials">
+        {{widget type="interface/widget_social" template="interface/widgets/social.phtml" identificador="perfis_footer" titulo="Redes Sociais" redes="all"}}
+    </div>
+</div>
