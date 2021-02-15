@@ -1433,14 +1433,30 @@ $j(document)
 
         // Scrolling
         scrollTop()
-        // Categories title
-        categoriesTitle()
 
-        // Menu Categories
-        $('.categories .parent').click(function (event) {
-            if ($(event.target).hasClass('parent')) {
-                $(event.target).toggleClass('on')
+        $('.header .mymenu__button').click(function () {
+            const expanded =
+                $(this).attr('aria-expanded') === 'true' ? 'false' : 'true'
+            const controls = $(this).attr('aria-controls')
+            $(this).attr('aria-expanded', expanded)
+            $(controls).attr('aria-expanded', expanded)
+        })
+
+        $('.header .mymenu').click(function (event) {
+            const element = $(event.target)
+            if (element.hasClass('mymenu')) {
+                const expanded =
+                    element.attr('aria-expanded') === 'true' ? 'false' : 'true'
+                $('[aria-controls*=menu-topo]').attr('aria-expanded', expanded)
+                $(this).attr('aria-expanded', expanded)
             }
+        })
+
+        addSVG({
+            'z-security': {
+                selector: '.mymenu .icon-security > a',
+                mode: 'prepend',
+            },
         })
     })
     .on('resizeStop', function (e) {

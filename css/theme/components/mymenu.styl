@@ -1,0 +1,103 @@
+.mymenu
+    &__button
+        position: relative
+        z-index: 200
+        display: none
+        justify-content: center
+        align-items: center
+        padding: 0
+        width: 52px
+        height: 52px
+        background: none
+        box-shadow: none
+        color: var(--primary)
+        font-size: 24px
+
+        @media media-max-lg
+            display: flex
+
+        &:hover
+            background: none
+            color: var(--primary)
+
+        &[aria-expanded=false]:before
+            icon('\f0c9')
+
+            display: flex
+            justify-content: center
+            margin-left: 2px
+
+        &[aria-expanded=false]
+            .ico
+                display: none
+
+        &[aria-expanded=true]
+            color: var(--color-white)
+
+        .ico
+            width: 20px
+            height: 20px
+
+    .header &
+        @media media-max-lg
+            position: fixed
+            top: 0
+            right: 0
+            z-index: 100
+            visibility: hidden
+            width: 100%
+            height: 100%
+            background: rgba(0, 0, 0, .5)
+            opacity: 0
+            transition: all .2s ease-in-out
+
+            &[aria-expanded=true]
+                visibility: visible
+                opacity: 1
+
+                .ul--0
+                    transform: translateX(0)
+
+        .ico
+            margin-right: 5px
+            width: 16px
+            height: 16px
+            fill: currentColor
+
+        .ul--0
+            @media media-min-lg
+                display: flex
+                align-items: center
+                gap: gap
+
+            @media media-max-lg
+                padding: gap (gap / 2)
+                width: calc(100% - 78px)
+                height: 100%
+                background: var(--color-white)
+                transition: all .4s ease-in-out
+                transform: translateX(-100%)
+
+        .li--0
+            display: flex
+            align-items: center
+            margin: 0
+
+            @media media-max-lg
+                justify-content: center
+
+        .a--0
+            display: flex
+            align-items: center
+            padding: 12px 0
+            border-bottom: solid 1px transparent
+            color: var(--color-link)
+            text-transform: uppercase
+            font-weight: regular
+            font-size: 12px
+            line-height: 1
+
+            &:hover
+                @media media-min-lg
+                    border-bottom-color: var(--primary)
+                    color: var(--primary)
