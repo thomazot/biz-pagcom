@@ -61,7 +61,7 @@ shadowBorder()
         box-shadow: 800px 0 0 @background, -800px 0 0 @background
 
     @media media-max-lg
-        box-shadow: 300px 0 0 @background, -300px 0 0 @background
+        box-shadow: 280px 0 0 @background, -280px 0 0 @background
 
 title()
     color: var(--primary)
@@ -95,3 +95,20 @@ text()
 
     @media media-min-lg
         font-size: 14px
+
+link()
+    display: inline-block
+    padding: 8px 16px
+    border: solid 1px var(--primary)
+    background: var(--color-white)
+    color: var(--primary)
+    text-transform: uppercase
+    font-weight: regular
+    font-size: 12px
+
+    @media media-min-lg
+        font-size: 16px
+
+        &:hover
+            background: var(--primary)
+            color: var(--primary-contrast)

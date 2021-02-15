@@ -1452,6 +1452,32 @@ $j(document)
             }
         })
 
+        $('.taxa__slide').click(function () {
+            const slides = $(this).closest('.taxa__slides')
+            const taxaCase = $(this).closest('.taxa__case')
+            const days = parseInt($(this).attr('data-dias'))
+
+            slides.find('.taxa__slide').removeClass('taxa__slide--actived')
+            $(this).addClass('taxa__slide--actived')
+
+            taxaCase.find('.taxa__perc').each(function () {
+                const perc = $(this).attr('data-perc')
+                if (days === 1) {
+                    if (perc === '4.98') {
+                        $(this).find('span').html('4,98%*')
+                    } else {
+                        $(this).find('span').html('1,99%*')
+                    }
+                } else {
+                    if (perc === '4.98') {
+                        $(this).find('span').html('2,99%*')
+                    } else {
+                        $(this).find('span').html('3,89%*')
+                    }
+                }
+            })
+        })
+
         addSVG({
             'z-security': {
                 selector: '.mymenu .icon-security > a',
