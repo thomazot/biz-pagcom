@@ -69,8 +69,10 @@
 
     &__case
         flex: 0 1 270px
-        padding: (gap / 2)
         text-align: center
+
+        @media media-max-lg
+            padding: (gap / 2)
 
         &:last-child
             .solution__figure:after

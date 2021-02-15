@@ -12190,7 +12190,7 @@ body {
 .solution__text {
   color: var(--color-link);
   font-weight: 400;
-  font-size: 0.63rem;
+  font-size: 0.75rem;
 }
 @media (min-width: 993px) {
   .solution__text {
@@ -12199,8 +12199,12 @@ body {
 }
 .solution__case {
   flex: 0 1 270px;
-  padding: 1rem;
   text-align: center;
+}
+@media (max-width: 992px) {
+  .solution__case {
+    padding: 1rem;
+  }
 }
 .solution__case:last-child .solution__figure:after {
   display: none;
