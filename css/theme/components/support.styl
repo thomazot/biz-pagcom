@@ -1,0 +1,43 @@
+.support
+    position: relative
+
+    &, .std &
+        &__title
+            titleGeral()
+
+            margin: gap 0
+            text-align: center
+
+        &__subtitle
+            color: var(--primary)
+            text-transform: uppercase
+            font-weight: bold
+            font-size: 18px
+
+        &__case
+            flex: 1
+            flex: 0 1 450px
+            min-width: 0
+            text-align: center
+
+        &__content
+            margin: gap 0
+            color: var(--color-link)
+            font-weight: regular
+            font-size: 19px
+
+        &__main
+            position: relative
+            display: flex
+            gap: gap
+
+            &:before
+                position: absolute
+                top: 4rem
+                left: 50%
+                z-index: -1
+                display: block
+                width: 50%
+                border-top: 2px solid #ddd
+                content: ''
+                transform: translateX(-50%)
