@@ -11694,6 +11694,8 @@ table .change-product-link:hover {
  */
 body {
   font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .wrapper-container {
   overflow: visible;
@@ -11746,6 +11748,18 @@ body {
 
 .cms-home .header-container + .banner {
   margin-top: -1rem;
+}
+
+.breadcrumb__home .breadcrumb__link:before {
+  display: none;
+}
+.breadcrumb__link,
+.breadcrumb__last {
+  display: block;
+  color: var(--color-link);
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1;
 }
 
 @media (max-width: 992px) {
@@ -12838,4 +12852,17 @@ body {
     background: var(--primary);
     color: var(--primary-contrast);
   }
+}
+
+.cms-quem-somos .main {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 60rem;
+}
+.cms-quem-somos .std p {
+  margin-bottom: 1.75rem;
+  color: var(--color-link);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
