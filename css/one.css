@@ -13012,6 +13012,110 @@ body:not(.cms-home) .header-container {
   margin-left: 0.63rem;
 }
 
+.cms-fale-conosco .page-title h1,
+.contacts-index-index .page-title h1 {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 2rem 0;
+  text-align: center;
+}
+@media (min-width: 993px) {
+  .cms-fale-conosco .page-title h1,
+  .contacts-index-index .page-title h1 {
+    font-size: 2.5rem;
+  }
+}
+.cms-fale-conosco .legend,
+.contacts-index-index .legend,
+.cms-fale-conosco .required,
+.contacts-index-index .required {
+  display: none;
+}
+.cms-fale-conosco .main,
+.contacts-index-index .main {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 60rem;
+}
+.cms-fale-conosco .forms .required,
+.contacts-index-index .forms .required {
+  opacity: 1;
+}
+.cms-fale-conosco .form-list label,
+.contacts-index-index .form-list label {
+  display: flex;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.cms-fale-conosco .form-list label em,
+.contacts-index-index .form-list label em {
+  order: 2;
+  color: #f00;
+}
+.cms-fale-conosco .form-list input[type=text],
+.contacts-index-index .form-list input[type=text],
+.cms-fale-conosco .form-list input[type=email],
+.contacts-index-index .form-list input[type=email],
+.cms-fale-conosco .form-list input[type=tel],
+.contacts-index-index .form-list input[type=tel] {
+  padding-right: 0;
+  padding-left: 0;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-radius: 0;
+}
+.cms-fale-conosco .forms__description,
+.contacts-index-index .forms__description {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1;
+}
+@media (min-width: 993px) {
+  .cms-fale-conosco .forms__description,
+  .contacts-index-index .forms__description {
+    font-size: 2.5rem;
+  }
+}
+.cms-fale-conosco .buttons-set,
+.contacts-index-index .buttons-set {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.cms-fale-conosco .buttons-set:before,
+.contacts-index-index .buttons-set:before {
+  color: var(--color-link);
+  content: '* Campos Obrigatórios';
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+.cms-fale-conosco .buttons-set button,
+.contacts-index-index .buttons-set button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  min-width: 190px;
+  height: 3rem;
+  border-radius: 0;
+  background: var(--primary);
+  color: var(--primary-contrast);
+  text-transform: uppercase;
+  font-size: 1.19rem;
+  margin-left: 0.63rem;
+}
+
 .cms-quem-somos .main {
   margin: 0 auto;
   max-width: 100%;

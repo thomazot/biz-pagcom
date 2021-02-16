@@ -1,0 +1,61 @@
+.cms-fale-conosco, .contacts-index-index
+    .page-title
+        h1
+            titleGeral()
+
+            padding: gap 0
+            text-align: center
+
+    .legend, .required
+        display: none
+
+    .main
+        margin: 0 auto
+        max-width: 100%
+        width: 960px
+
+    .forms .required
+        opacity: 1
+
+    .form-list
+        label
+            display: flex
+            color: var(--primary)
+            text-transform: uppercase
+            font-weight: regular
+            font-size: 16px
+
+            em
+                order: 2
+                color: #f00
+
+        input[type=text], input[type=email], input[type=tel]
+            padding-right: 0
+            padding-left: 0
+            border-top-width: 0
+            border-right-width: 0
+            border-left-width: 0
+            border-radius: 0
+
+    .forms__description
+        titleGeral()
+
+        margin-bottom: gap
+        text-align: center
+        line-height: 1
+
+    .buttons-set
+        display: flex
+        justify-content: flex-end
+        align-items: center
+
+        &:before
+            color: var(--color-link)
+            content: '* Campos Obrigatórios'
+            font-weight: regular
+            font-size: 12px
+
+        button
+            button()
+
+            margin-left: 10px
