@@ -1,0 +1,63 @@
+.cms-contratar-cambio
+    .page-title
+        h1
+            titleGeral()
+
+            color: var(--color-form-subtitle)
+            text-align: center
+
+            &:before, &:after
+                color: var(--primary)
+
+            &:before
+                content: 'Contrate o '
+
+            &:after
+                content: ' conosco'
+
+    .forms
+        margin: 0 auto
+        padding: gap
+        max-width: 100%
+        width: 650px
+        border: solid 1px var(--primary)
+        border-radius: 5px
+
+        input
+            height: 48px
+
+        label
+            color: var(--primary)
+            font-weight: bold
+            font-size: 19px
+
+        &__actions
+            justify-content: flex-end
+
+            @media media-max-sm
+                display: block
+
+            .required
+                margin-bottom: 0
+                padding-right: 10px
+                color: var(--color-link)
+                font-size: 12px
+                opacity: 1
+
+        @media media-min-lg
+            padding: (gap * 2)
+
+        &__description
+            padding: 0 0 gap
+
+            p
+                color: var(--primary)
+                text-align: center
+                font-weight: bold
+                font-size: 18px
+
+                @media media-min-lg
+                    font-size: 24px
+
+        button
+            button()

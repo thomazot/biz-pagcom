@@ -1,0 +1,140 @@
+.cms-pagcom-digital
+    .forms
+        margin: 0 auto
+        max-width: 100%
+        width: 960px
+
+        .slick
+            &-arrow
+                position: absolute
+                top: 50%
+                z-index: 20
+                width: 50px
+                height: 50px
+                background: none
+                box-shadow: none
+                color: var(--color-link)
+                transform: translateY(-50%)
+
+                .ico
+                    width: 26px
+                    height: 26px
+                    fill: currentColor
+
+            &-next
+                right: 0
+
+            &-prev
+                left: 0
+
+        &__description
+            h2
+                titleGeral()
+
+                text-align: center
+
+                span
+                    color: var(--color-form-subtitle)
+
+        &__actions
+            justify-content: flex-end
+            padding-top: 16px
+
+            @media media-max-sm
+                display: block
+
+            .required
+                margin-bottom: 0
+                padding-right: 10px
+                color: var(--color-link)
+                opacity: 1
+
+            button
+                button()
+
+        label
+            display: flex
+            padding-top: 10px
+            color: var(--primary)
+            text-transform: uppercase
+            font-weight: regular
+            font-size: 16px
+            opacity: 1
+
+            em
+                order: 2
+                color: var(--color-alert)
+
+            &[for=field_19]
+                display: none
+
+        .input-box
+            ul, li
+                padding: 0
+                list-style-type: none !important
+
+            li
+                display: flex
+                align-items: center
+
+            .control
+                position: relative
+                background: linear-gradient(45deg, #f5f5f5, #fff)
+
+                input[type=checkbox]
+                    position: absolute
+                    top: 5px
+                    right: 5px
+
+                label
+                    display: block
+                    margin: 30px (gap / 2) (gap / 2)
+                    padding-top: (gap / 2)
+                    min-height: 130px
+                    width: 100%
+                    border-top: solid 2px var(--color-form-subtitle)
+                    color: var(--primary)
+                    text-align: center
+                    font-weight: bold
+                    font-size: 24px
+                    opacity: 1
+
+                    &:after
+                        padding-top: 10px
+                        color: var(--color-link)
+                        text-transform: none
+                        font-weight: regular
+                        font-size: 16px
+                        line-height: 1
+
+            .plano-smart
+                &:after
+                    display: block
+                    content: 'A Sua Loja Virtual por apenas R$ 250,00 mensais.'
+
+            .plano-open
+                &:after
+                    display: block
+                    content: 'Sua loja virtual customizada por R$ 5000,00 Setup e mensalidade de R$ 500,00 mensais'
+
+            .plano-custom
+                &:after
+                    display: block
+                    content: ' Solução completa de acordo com sua necessidade, projetos customizados, Setup de acordo com o projeto e mensalidade de R$ 5000,00 mensais.'
+
+        .form-list
+            @media media-min-lg
+                display: flex
+                flex-flow: row wrap
+                justify-content: space-between
+
+            .fields
+                display: contents
+
+                &:first-child
+                    .field:first-child
+                        flex: 0 0 100%
+
+            .field
+                flex: 0 1 440px
+                padding: 0

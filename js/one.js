@@ -1229,7 +1229,7 @@ $j.fn.neonTheme.custom = {
     fix_zoomHeader: true, // corrige o z-index do .header e do zoom dos produtos no :hover de cada um
     fix_address_phone: true, // corrige a exibição do ícone de telefone nas listagens de endereços
     fix_category_description: true, // troca a posição padrão da descrição da categoria
-    fix_catalog_flexbox: true, // adiciona elementos para arrumar o flexbox do catálogo
+    fix_catalog_flexbox: false, // adiciona elementos para arrumar o flexbox do catálogo
     /* - Responsivo */
     m_categories: true, // ativa o responsivo do Menu de Categorias
     m_search: true, // ativa o responsivo da Busca
@@ -1492,6 +1492,58 @@ $j(document)
                 mode: 'html',
             },
         })
+
+        $(
+            '.cms-pagcom-digital .form-list .fields:first-child .input-box > ul'
+        ).slick({
+            slidesToShow: 3,
+            prevArrow: `<button type="button" class="slick-prev"><svg class="ico z-prev"><use xlink:href="#z-prev" /></svg></button>`,
+            nextArrow: `<button type="button" class="slick-next"><svg class="ico z-next"><use xlink:href="#z-next" /></svg></button>`,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        centerMode: false,
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        })
+
+        function sliderCarosel() {
+            const el = $('.category__products .products__list')
+
+            if (el.find('.ias-noneleft').length)
+                el.find('.ias-noneleft').remove()
+
+            if (el.hasClass('slick-initialized')) {
+                el.find('.slick-cloned').remove()
+                el.slick('unslick')
+            }
+            el.slick({
+                centerMode: true,
+                slidesToShow: 3,
+                prevArrow: `<button type="button" class="slick-prev"><svg class="ico z-prev"><use xlink:href="#z-prev" /></svg></button>`,
+                nextArrow: `<button type="button" class="slick-next"><svg class="ico z-next"><use xlink:href="#z-next" /></svg></button>`,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            centerMode: true,
+                            slidesToShow: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 500,
+                        settings: {
+                            centerMode: false,
+                            slidesToShow: 1,
+                        },
+                    },
+                ],
+            })
+        }
+        sliderCarosel()
     })
     .on('resizeStop', function (e) {
         // Safe window.resize
