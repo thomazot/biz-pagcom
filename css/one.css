@@ -12923,6 +12923,295 @@ body:not(.cms-home) .header-container {
   }
 }
 
+.customerregister-register-account #registration-form {
+  margin: 2rem 0;
+}
+.customerregister-register-account .page-title {
+  display: none;
+}
+.customerregister-register-account .legend {
+  margin: 1rem 0;
+  padding: 1rem 0 0.63rem;
+  border-bottom: solid 2px var(--color-link);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.38rem;
+}
+.customerregister-register-account label {
+  display: inline-block;
+  color: #666;
+  font-weight: 700;
+  font-size: 0.75rem;
+  opacity: 1;
+}
+.customerregister-register-account .form-list .fields > label {
+  padding-bottom: 0.31rem;
+}
+.customerregister-register-account .checkout-agreements {
+  padding: 1rem;
+  max-width: 100%;
+  width: 25.63rem;
+  border: solid 2px #ccc;
+  background: #f2f2f2;
+}
+@media (min-width: 993px) {
+  .customerregister-register-account .register-tabs {
+    display: flex;
+    align-items: stretch;
+    gap: 32px;
+  }
+}
+@media (min-width: 993px) {
+  .customerregister-register-account .register-tabs li {
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    min-width: 0;
+  }
+}
+.customerregister-register-account .register-tabs li select {
+  display: block;
+  padding: 0 0.63rem;
+  width: 100%;
+  height: 3rem;
+  border: 2px solid var(--color-link);
+  border-radius: 0.4rem;
+  background: var(--color-white);
+  color: #636363;
+  font-weight: 400;
+  font-size: 1rem;
+}
+@media (min-width: 993px) {
+  .customerregister-register-account .register-tabs li select {
+    margin-top: auto;
+  }
+}
+.customerregister-register-account .register-tabs li label {
+  display: block;
+  padding: 0.63rem 0;
+}
+@media (max-width: 992px) {
+  .customerregister-register-account .register-tabs li label {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 993px) {
+  .customerregister-register-account .register-tabs li label {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+.customerregister-register-account .register-tabs li label:before {
+  display: block;
+  flex: 0 0 48px;
+  margin-right: 0.63rem;
+  width: 3rem;
+  height: 3rem;
+  content: '';
+}
+@media (min-width: 993px) {
+  .customerregister-register-account .register-tabs li label:before {
+    flex: 0 0 100%;
+    margin: 0 auto 1rem;
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}
+.customerregister-register-account .register-tabs li:nth-child(1) label:before {
+  background: url("/media/interface/images/voce.png") no-repeat center/contain;
+}
+.customerregister-register-account .register-tabs li:nth-child(2) label:before {
+  background: url("/media/interface/images/ramo.png") no-repeat center/contain;
+}
+.customerregister-register-account .register-tabs li:nth-child(3) label:before {
+  background: url("/media/interface/images/venda.png") no-repeat center/contain;
+}
+.customerregister-register-account .register-tabs li:nth-child(4) label:before {
+  background: url("/media/interface/images/chip.png") no-repeat center/contain;
+}
+.customerregister-register-account .register-tabs li:nth-child(5) label:before {
+  background: url("/media/interface/images/mes.png") no-repeat center/contain;
+}
+.customerregister-register-account .register-tabs li label {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.06rem;
+}
+.customerregister-register-account .form-list .fields:last-child {
+  margin-bottom: 0 !important;
+}
+.customerregister-register-account form#registration-form {
+  margin-bottom: 4rem;
+}
+.customerregister-register-account form#registration-form .legend {
+  margin: 0 auto 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #808080;
+  color: var(--primary);
+  text-transform: none;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.4rem;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4;
+  text-rendering: optimizeSpeed;
+}
+.customerregister-register-account form#registration-form .form-list {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 2rem;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
+  grid-template: 1fr / repeat(6, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+}
+.customerregister-register-account form#registration-form .form-list .fields {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+.customerregister-register-account form#registration-form .form-list .fields.single {
+  -ms-grid-column-span: 1;
+  grid-column: span 1;
+}
+.customerregister-register-account form#registration-form .form-list .fields.pass {
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+.customerregister-register-account form#registration-form .form-list label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #666;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.customerregister-register-account form#registration-form .form-list input,
+.customerregister-register-account form#registration-form .form-list select {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+}
+.customerregister-register-account #radio-account-owner {
+  display: flex;
+  align-items: center;
+}
+.customerregister-register-account #radio-account-owner label {
+  display: flex !important;
+  flex: 0 0 auto;
+  align-items: center;
+  margin-right: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+.customerregister-register-account #radio-account-owner label input[type="radio"] {
+  flex: 0 0 auto;
+  margin-right: 0.5rem;
+  width: unset !important;
+}
+.customerregister-register-account form#registration-form .message-text {
+  color: #444;
+  font-weight: 700;
+  font-size: 0.875rem;
+  grid-column: 1/-1;
+}
+.customerregister-register-account form#registration-form .message-text label {
+  display: inline-block;
+  font-size: inherit;
+}
+.customerregister-register-account form#registration-form .message-text li {
+  margin-bottom: 0.25rem;
+}
+.customerregister-register-account form#registration-form .message-text li:before {
+  display: inline-block;
+  margin-right: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background: #f5f5f5;
+  color: #00f;
+  content: '!';
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.customerregister-register-account form#registration-form .message-container {
+  display: table;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  background: #f2f2f2;
+}
+.customerregister-register-account form#registration-form .message-container h3 {
+  color: #333;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+.customerregister-register-account form#registration-form .message-container label {
+  display: block;
+  text-align: left;
+  font-size: 0.875rem;
+}
+.customerregister-register-account form#registration-form .message-container label input {
+  display: inline-block;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.customerregister-register-account form#registration-form .message-container label a {
+  display: block;
+  margin: 0.25rem 0 0;
+}
+.customerregister-register-account form#registration-form #login-creation {
+  margin-bottom: 2rem;
+}
+.customerregister-register-account form#registration-form button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.75rem 4rem;
+  border: 2px solid var(--primary);
+  border-color: var(--primary) #2ba1e1 #2ba1e1 var(--primary);
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.customerregister-register-account form#registration-form button:hover {
+  background: linear-gradient(to right, var(--primary), #2ba1e1);
+  color: #fff;
+}
+.customerregister-register-account form#registration-form .form-list input,
+.customerregister-register-account form#registration-form .form-list select {
+  display: block;
+  margin: 0;
+  padding: 0 0.63rem;
+  width: 100%;
+  height: 2rem;
+  border: solid 1px var(--color-link);
+  box-shadow: none;
+  font-size: 1rem;
+}
+.customerregister-register-account form#registration-form button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.75rem 4rem;
+  border: 2px solid var(--primary);
+  border-color: var(--primary) #2ba1e1 #2ba1e1 var(--primary);
+  background: #efefef;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+@media (max-width: 568px) {
+  .customerregister-register-account form#registration-form .form-list {
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr 1rem 1fr;
+    grid-template: 1fr / repeat(2, 1fr);
+    grid-column-gap: 1rem;
+  }
+}
+
 .catalog-category-view .toolbar,
 .catalog-category-view .ias-noneleft {
   display: none !important;
@@ -13554,4 +13843,52 @@ body:not(.cms-home) .header-container {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.4rem;
+}
+
+.customerregister-register-index .customer-account-login {
+  margin: 4rem auto;
+  padding: 1rem;
+  width: 43.75rem;
+  border: solid 1px var(--primary);
+  border-radius: 5px;
+  background: var(--color-white);
+}
+@media (min-width: 993px) {
+  .customerregister-register-index .customer-account-login {
+    padding: 4rem;
+  }
+}
+.customerregister-register-index .customer-account-login form:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.customerregister-register-index .customer-account-login label {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.19rem;
+}
+@media (min-width: 993px) {
+  .customerregister-register-index .customer-account-login label {
+    font-size: 1.56rem;
+  }
+}
+.customerregister-register-index .customer-account-login input {
+  height: 3rem;
+}
+.customerregister-register-index .customer-account-login button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  min-width: 190px;
+  height: 3rem;
+  border-radius: 0;
+  background: var(--primary);
+  color: var(--primary-contrast);
+  text-transform: uppercase;
+  font-size: 1.19rem;
+  float: right;
+  margin-left: auto;
+  height: 1.88rem;
 }

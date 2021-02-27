@@ -1,0 +1,273 @@
+
+.customerregister-register-account
+    #registration-form
+        margin: gap 0
+
+    .page-title
+        display: none
+
+    .legend
+        margin: (gap / 2) 0
+        padding: (gap / 2) 0 10px
+        border-bottom: solid 2px var(--color-link)
+        color: var(--primary)
+        font-weight: bold
+        font-size: 22px
+
+    label
+        display: inline-block
+        color: #666
+        font-weight: bold
+        font-size: 12px
+        opacity: 1
+
+    .form-list .fields > label
+        padding-bottom: 5px
+
+    .checkout-agreements
+        padding: (gap / 2)
+        max-width: 100%
+        width: 410px
+        border: solid 2px #ccc
+        background: #f2f2f2
+
+    .register-tabs
+        @media media-min-lg
+            display: flex
+            align-items: stretch
+            gap: gap
+
+        li
+            @media media-min-lg
+                display: flex
+                flex: 1
+                flex-flow: column nowrap
+                min-width: 0
+
+            select
+                display: block
+                padding: 0 10px
+                width: 100%
+                height: 3rem
+                border: 2px solid var(--color-link)
+                border-radius: .4rem
+                background: var(--color-white)
+                color: #636363
+                font-weight: regular
+                font-size: 1rem
+
+                @media media-min-lg
+                    margin-top: auto
+
+            label
+                display: block
+                padding: 10px 0
+
+                @media media-max-lg
+                    display: flex
+                    align-items: center
+
+                @media media-min-lg
+                    margin-bottom: 16px
+                    text-align: center
+
+                &:before
+                    display: block
+                    flex: 0 0 48px
+                    margin-right: 10px
+                    width: 48px
+                    height: 48px
+                    content: ''
+
+                    @media media-min-lg
+                        flex: 0 0 100%
+                        margin: 0 auto 16px
+                        width: 100px
+                        height: 100px
+
+            &:nth-child(1)
+                label:before
+                    background: url(voce) no-repeat center / contain
+
+            &:nth-child(2)
+                label:before
+                    background: url(ramo) no-repeat center / contain
+
+            &:nth-child(3)
+                label:before
+                    background: url(venda) no-repeat center / contain
+
+            &:nth-child(4)
+                label:before
+                    background: url(chip) no-repeat center / contain
+
+            &:nth-child(5)
+                label:before
+                    background: url(mes) no-repeat center / contain
+
+            label
+                color: var(--primary)
+                font-weight: bold
+                font-size: 17px
+
+    .form-list .fields:last-child
+        margin-bottom: 0 !important
+
+    form#registration-form
+        margin-bottom: 4rem
+
+    form#registration-form .legend
+        margin: 0 auto 1rem
+        padding-bottom: .5rem
+        border-bottom: 2px solid #808080
+        color: var(--primary)
+        text-transform: none
+        font-weight: 700
+        font-style: normal
+        font-size: 1.4rem
+        font-family: 'Lato', sans-serif
+        line-height: 1.4
+        text-rendering: optimizeSpeed
+
+    form#registration-form .form-list
+        display: grid
+        margin-bottom: 2rem
+        grid-template: unquote('1fr / repeat(6, 1fr)')
+        grid-column-gap: 2rem
+        grid-row-gap: 1rem
+
+    form#registration-form .form-list .fields
+        grid-column: span 2
+
+    form#registration-form .form-list .fields.single
+        grid-column: span 1
+
+    form#registration-form .form-list .fields.pass
+        grid-row: 2
+
+    form#registration-form .form-list label
+        display: block
+        margin-bottom: .25rem
+        color: #666
+        font-weight: 700
+        font-size: 1rem
+
+    form#registration-form .form-list input, form#registration-form .form-list select
+        display: block
+        margin: 0
+        width: 100%
+        height: 2rem
+        font-size: 1rem
+
+    #radio-account-owner
+        display: flex
+        align-items: center
+
+    #radio-account-owner label
+        display: flex !important
+        flex: 0 0 auto
+        align-items: center
+        margin-right: 1rem
+        font-family: 'Lato', sans-serif
+
+    #radio-account-owner label input[type="radio"]
+        flex: 0 0 auto
+        margin-right: .5rem
+        width: unset !important
+
+    form#registration-form .message-text
+        color: #444
+        font-weight: 700
+        font-size: .875rem
+        grid-column: 1 / -1
+
+    form#registration-form .message-text label
+        display: inline-block
+        font-size: inherit
+
+    form#registration-form .message-text li
+        margin-bottom: .25rem
+
+    form#registration-form .message-text li:before
+        display: inline-block
+        margin-right: .25rem
+        width: 1rem
+        height: 1rem
+        border-radius: 100%
+        background: #f5f5f5
+        color: blue
+        content: '!'
+        text-align: center
+        font-size: .75rem
+        line-height: 1rem
+
+    form#registration-form .message-container
+        display: table
+        padding: 1rem
+        border: 2px solid #ccc
+        background: #f2f2f2
+
+    form#registration-form .message-container h3
+        color: #333
+        text-transform: none
+        font-weight: 700
+        font-size: .875rem
+
+    form#registration-form .message-container label
+        display: block
+        text-align: left
+        font-size: .875rem
+
+    form#registration-form .message-container label input
+        display: inline-block
+        margin-right: .5rem
+        vertical-align: middle
+
+    form#registration-form .message-container label a
+        display: block
+        margin: .25rem 0 0
+
+    form#registration-form #login-creation
+        margin-bottom: 2rem
+
+    form#registration-form button
+        display: block
+        margin: 0 auto
+        padding: .75rem 4rem
+        border: 2px solid var(--primary)
+        border-color: var(--primary) #2ba1e1 #2ba1e1 var(--primary)
+        color: var(--primary)
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 1.2rem
+
+    form#registration-form button:hover
+        background: linear-gradient(to right, var(--primary), #2ba1e1)
+        color: #fff
+
+    form#registration-form .form-list input, form#registration-form .form-list select
+        display: block
+        margin: 0
+        padding: 0 10px
+        width: 100%
+        height: 2rem
+        border: solid 1px var(--color-link)
+        box-shadow: none
+        font-size: 1rem
+
+    form#registration-form button
+        display: block
+        margin: 0 auto
+        padding: .75rem 4rem
+        border: 2px solid var(--primary)
+        border-color: var(--primary) #2ba1e1 #2ba1e1 var(--primary)
+        background: #efefef
+        color: var(--primary)
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 1.2rem
+
+    @media (max-width: 568px)
+        form#registration-form .form-list
+            grid-template: unquote('1fr / repeat(2, 1fr)')
+            grid-column-gap: 1rem
