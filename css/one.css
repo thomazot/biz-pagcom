@@ -13286,12 +13286,30 @@ body:not(.cms-home) .header-container {
   visibility: visible;
   opacity: 1;
 }
+@media (min-width: 993px) {
+  .catalog-category-view .products {
+    margin-top: -3.13rem;
+  }
+}
 .catalog-category-view .products__item {
   padding: 0;
 }
 .catalog-category-view .products__header {
   padding: 0.06rem;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.1);
+}
+@media (min-width: 993px) {
+  .catalog-category-view .products__header {
+    overflow: hidden;
+  }
+  .catalog-category-view .products__header span {
+    display: block;
+    height: 100%;
+  }
+  .catalog-category-view .products__header img {
+    max-height: 40vh;
+    width: auto;
+  }
 }
 .catalog-category-view .products__list {
   margin: 0;
